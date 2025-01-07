@@ -2,14 +2,15 @@ package main
 
 import (
 	"fmt"
-	"os"
 )
 
+var fruits []string = []string{"apple", "banana", "cherry", "tomato", "avacodo"}
+
 func main() {
-	var s, sep string
-	for i := 1; i < len(os.Args); i++ {
-		s += sep + os.Args[i]
-		sep = ""
+	// for _, fruits := range fruits {
+	// 	fmt.Println(fruits)
+	// }
+	for _, value := range fruits[:2] {
+		fmt.Println(value)
 	}
-	fmt.Println(s)
 }
